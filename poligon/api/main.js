@@ -4,7 +4,6 @@ const apiKey = process.argv[2];
 const getData = async () => {
     const response = await axios.get('https://poligon.aidevs.pl/dane.txt');
     return response.data;
-    // const dataArray = data.split('\n').map(line => line.trim()).filter(line => line !== '');
 }
 
 const postAnswer = async (answer) => {
